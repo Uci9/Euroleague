@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KK Real Madrid - Sastav i informacije</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+      background-color: #f9f9f9;
+    }
+    h1 {
+      color: #c3002f;
+      text-align: center;
+    }
+    .igrac {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .igrac img {
+      height: 120px;
+      border-radius: 10px;
+    }
+    .info {
+      flex: 1;
+    }
+    .info h3 {
+      margin: 0 0 5px;
+      color: #333;
+    }
+    .info p {
+      margin: 3px 0;
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 8px 12px;
+      background-color: #c3002f;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .back-link:hover {
+      background-color: #a00028;
+    }
+    .igrac img {
+  max-width: 100px;
+  height: auto;
+}
+.igrac:hover {
+  transform: scale(1.02);
+  transition: transform 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+  </style>
+</head>
+<body>
+  <h1>KK Real Madrid - Sastav tima</h1>
+
+
+  <div class="igrac">
+    <img src="data:image/webp;base64,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" alt="Facundo Campazzo" />
+    <div class="info">
+      <h3>Facundo Campazzo</h3>
+      <p>Euroleague (2024/25)</p>
+      <p><strong>Pozicija:</strong> Bek</p>
+      <p><strong>Broj:</strong> #7</p>
+      <p><strong>Poeni:</strong> 12.2</p>
+      <p><strong>Skokovi:</strong> 3.0</p>
+      <p><strong>Asistencije:</strong> 6.4</p>
+    </div>
+  </div>
+  <div class="igrac">
+    <img src="data:image/webp;base64,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" alt="Theo Maledon" />
+    <div class="info">
+      <h3>Theo Maledon</h3>
+      <p>Euroleague (2024/25)</p>
+      <p><strong>Pozicija:</strong> Bek suter</p>
+      <p><strong>Broj:</strong> #6</p>
+      <p><strong>Poeni:</strong> 17.0</p>
+      <p><strong>Skokovi:</strong> 3.5</p>
+      <p><strong>Asistencije:</strong> 4.8</p>
+    </div>
+  </div>
+  <div class="igrac">
+    <img src="https://th.bing.com/th/id/OIP.d-mmy64nQ5KQVo_YQ3cDzQHaLU?w=115&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="David Kramer" />
+    <div class="info">
+      <h3>David Kramer</h3>
+      <p>Liga ABC (2024/25)</p>
+      <p><strong>Pozicija:</strong> Krilo</p>
+      <p><strong>Broj:</strong> #44</p>
+      <p><strong>Poeni:</strong> 10.9</p>
+      <p><strong>Skokovi:</strong> 1.9</p>
+      <p><strong>Asistencije:</strong> 0.7</p>
+    </div>
+  </div>
+   <div class="igrac">
+    <img src="https://th.bing.com/th/id/OIP.bMQoKEJGnRXRn9Sh3g_bRgHaJ3?w=120&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Mario Hezonja" />
+    <div class="info">
+      <h3>Mario Hezonja</h3>
+      <p>Liga ABC (2024/25)</p>
+      <p><strong>Pozicija:</strong> Krilo</p>
+      <p><strong>Broj:</strong> #15</p>
+      <p><strong>Poeni:</strong> 14.4</p>
+      <p><strong>Skokovi:</strong> 5.2</p>
+      <p><strong>Asistencije:</strong> 1.6</p>
+    </div>
+  </div>
+
+  <div class="igrac">
+    <img src="https://th.bing.com/th/id/OIP.z0d1rAdk6XUl3wRd4O7v5QHaLG?w=115&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Edy Tavares" />
+    <div class="info">
+      <h3>Edy Tavares</h3>
+      <p>Euroleague (2024/25)</p>
+      <p><strong>Pozicija:</strong> Centar</p>
+      <p><strong>Broj:</strong> #22</p>
+      <p><strong>Poeni:</strong> 10.6</p>
+      <p><strong>Skokovi:</strong> 7.1</p>
+      <p><strong>Asistencije:</strong> 1.1</p>
+    </div>
+  </div>
+<p><----------------------------------------Prva Petorka------------------------------------------></p>
+
+
+  <a class="back-link" href="index.html">← Nazad na početnu</a>
+</body>
+</html>
+
+

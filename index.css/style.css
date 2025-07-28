@@ -1,0 +1,264 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+      body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+  background-repeat: repeat;
+  background-size: auto;
+  color: #000;
+}
+
+        header {
+            background: #0b0b2e;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header .logo {
+            font-weight: 700;
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #ff6f00;
+        }
+
+        .hero {
+            background: url('https://cdn.euroleague.net/rs/0twj6du7tzwxnvj/image/upload/v1684299254/euroliga/hero-bg-3.jpg') center/cover no-repeat;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #000000; 
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .news-section, .table-section, .teams-section {
+            margin-bottom: 60px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #0b0b2e;
+        }
+
+        .news-cards {
+            display: flex;
+           align-items: center;
+           justify-content: center;
+            gap: 20px;
+            
+        }
+        .news-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+            width: 410px;
+  height: 410px;
+  object-fit: cover;
+        }
+        .news-card:hover {
+            transform: translateY(-8px);
+        }
+        .news-card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+        }
+        .news-card .content {
+            padding: 15px;
+        }
+        .news-card .content h3 {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+            color: #0b0b2e;
+        }
+        .news-card .content p {
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+        }
+        thead {
+            background: #0b0b2e;
+            color: white;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: center;
+        }
+        tbody tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+        tbody tr:hover {
+            background: #ff6f00;
+            color: white;
+            transition: 0.3s;
+        }
+
+        .teams-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+        .team-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+            width: 180px;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .team-card:hover {
+            transform: translateY(-10px);
+        }
+        .team-card img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+        .team-card h3 {
+            font-size: 1.1rem;
+            color: #0b0b2e;
+        }
+
+        footer {
+            background: #0b0b2e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            .hero {
+                font-size: 1.8rem;
+                height: 250px;
+            }
+            .team-card {
+                width: 140px;
+            }
+        }
+       .timovi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  justify-items: center;
+}
+
+.tim {
+  text-align: center;
+}
+
+.tim img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.team-profile {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.team-profile h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.team-profile ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+    .igrac-info {
+        position: relative;
+        display: inline-block;
+    }
+
+    .tooltip {
+        display: none;
+        position: absolute;
+        left: 110%; 
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: white;
+        color: black;
+        border: 1px solid #ccc;
+        padding: 30px;
+        z-index: 10;
+        width: 300px;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .igrac-info:hover .tooltip {
+        display: block;
+    }
+
+    .tooltip img {
+        width: 105px;
+        height: auto;
+        float: left;
+        margin-right: 30px;
+        border-radius: 20px;
+    }
+
+    .tooltip-content {
+        overflow: hidden;
+    }
+
+    .tooltip strong {
+        display: block;
+        margin-bottom: 5px;
+    }
